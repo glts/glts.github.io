@@ -1,0 +1,44 @@
+body {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 11.5pt;
+    line-height: 1.3em;
+}
+div#post {
+    margin: 0 auto;
+    width: 42em;
+}
+table {
+    border-collapse: collapse;
+}
+th {
+    background-color: lightgrey;
+}
+th, td {
+    border: 1px solid lightgrey;
+    padding: 0.2em 0.6em;
+}
+h1 {
+    margin: 1em 0;
+}
+h2 {
+    margin-top: 2em;
+}
+h3 {
+    margin-top: 2em;
+}
+code {
+    background-color: Gainsboro;
+    border-radius: 3px 3px 3px 3px;
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+    font-size: 95%;
+    font-weight: bold;
+    margin: 0 0.1em;
+    padding: 0 0.2em;
+}
+li p {
+    margin: 0;
+}
+div#license {
+    margin: 3em auto;
+    text-align: center;
+}
