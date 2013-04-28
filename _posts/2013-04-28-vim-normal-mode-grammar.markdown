@@ -344,7 +344,7 @@ so on.
 *   Jim Dennis (2009): [Answer to "What is your most productive shortcut with Vim?"](http://stackoverflow.com/a/1220118/329063)
 *   Yan Pritzker (2011): ["Learn to speak vim – verbs, nouns, and modifiers!"](http://yanpritzker.com/2011/12/16/learn-to-speak-vim-verbs-nouns-and-modifiers/)
 *   Rafe Colburn (2012): ["The grammar of Vim"](http://rc3.org/2012/05/12/the-grammar-of-vim/)
-*   takac (2013): ["Vim Grammar"](http://takac.github.com/2013/01/30/vim-grammar/)
+*   takac (2013): ["Vim Grammar"](http://takac.github.io/2013/01/30/vim-grammar/)
 
 <br />
 
