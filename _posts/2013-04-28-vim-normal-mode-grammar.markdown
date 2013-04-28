@@ -201,9 +201,9 @@ sentences.
     <th rowspan="3" valign="top">Transitive sentence</th>
     <td align="center">[<code>"a</code>]</td>
     <td align="center">[<code>2</code>]</td>
-    <td align="center"><code>c</code></td>
-    <td align="center">[<code>V</code>] ~ [<code>3</code>]</td>
-    <td align="center"><code>ge</code></td>
+    <td align="center"><code>d</code></td>
+    <td align="center">[<code>&lt;C-V&gt;</code>] ~ [<code>3</code>]</td>
+    <td align="center"><code>gE</code></td>
   </tr>
   <tr>
     <td align="center"><em>register</em></td>
