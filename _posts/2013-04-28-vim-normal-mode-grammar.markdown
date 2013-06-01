@@ -152,10 +152,12 @@ below, yanks three lines, not four: the adverb has scope over the whole
 core predication with both verbal and object quantifiers. Its scope is
 not limited to just the quantified object.
 
-    [a]b cd
-    ef gh
-    ij kl mn
-    op qr
+{% highlight text %}
+[a]b cd
+ef gh
+ij kl mn
+op qr
+{% endhighlight %}
 
 This concludes our overview of the syntax. We return to our title
 sentence `"a2d<C-V>3gE` in the next section.
