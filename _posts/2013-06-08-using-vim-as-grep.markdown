@@ -221,7 +221,7 @@ is to stderr.
 
 The thing is, the silent mode output facilities for `:print` and friends
 aren't there for `:echo`. The CRLF-like line endings are in fact
-artifacts of cursor movement key codes Vim sends to the terminal while
+artefacts of cursor movement key codes Vim sends to the terminal while
 in raw mode. That is inconvenient and the reason why I feel silent mode
 is a feature that could still use some work.
 
