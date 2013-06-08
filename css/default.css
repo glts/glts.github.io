@@ -26,6 +26,14 @@ h2 {
 h3 {
     margin-top: 2em;
 }
+#post pre {
+    background-color: #E2E2E2;
+	padding: 0 0.5em;
+}
+#post pre code {
+	margin: 0;
+	padding: 0;
+}
 code {
     background-color: #E2E2E2;
     border-radius: 3px 3px 3px 3px;
