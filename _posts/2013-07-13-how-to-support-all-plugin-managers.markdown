@@ -199,7 +199,7 @@ must be contained directly (at the top level) inside the zip. There must
 files. For example, this would be a good upload for the fictional
 *shebang.vim* plugin, uploaded to vim.org as `shebang-1.0.0.zip`:
 
-*[VCS]: Version control system
+*[VCS]: version control system
 
     autoload/
         shebang/
