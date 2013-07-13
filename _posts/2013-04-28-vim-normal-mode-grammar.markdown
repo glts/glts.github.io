@@ -342,15 +342,23 @@ so on.
 
 ## Further reading
 
-*   kana (2008): ["operator, the true power of Vim"](http://whileimautomaton.net/2008/11/vimm3/operator)
-*   Jim Dennis (2009): [Answer to "What is your most productive shortcut with Vim?"](http://stackoverflow.com/a/1220118/329063)
-*   Yan Pritzker (2011): ["Learn to speak vim – verbs, nouns, and modifiers!"](http://yanpritzker.com/2011/12/16/learn-to-speak-vim-verbs-nouns-and-modifiers/)
-*   Rafe Colburn (2012): ["The grammar of Vim"](http://rc3.org/2012/05/12/the-grammar-of-vim/)
-*   takac (2013): ["Vim Grammar"](http://takac.github.io/2013/01/30/vim-grammar/)
+*   kana (2008): ["operator, the true power of Vim"][operator]
+*   Jim Dennis (2009): [Answer to "What is your most productive shortcut with Vim?"][Jim Dennis]
+*   Yan Pritzker (2011): ["Learn to speak vim – verbs, nouns, and modifiers!"][Yan Pritzker]
+*   Rafe Colburn (2012): ["The grammar of Vim"][Rafe Colburn]
+*   takac (2013): ["Vim Grammar"][takac]
+*   AshleyF (2013): *[VimSpeak][]*
+
+[operator]: http://whileimautomaton.net/2008/11/vimm3/operator
+[Jim Dennis]: http://stackoverflow.com/a/1220118/329063
+[Yan Pritzker]: http://yanpritzker.com/2011/12/16/learn-to-speak-vim-verbs-nouns-and-modifiers/
+[Rafe Colburn]: http://rc3.org/2012/05/12/the-grammar-of-vim/
+[takac]: http://takac.github.io/2013/01/30/vim-grammar/
+[VimSpeak]: https://github.com/AshleyF/VimSpeak
 
 <br />
 
-*First published by [glts](https://github.com/glts) on 2013-04-28.*
+*First published by glts on April 28, 2013, amended on July 13, 2013.*
 
 
 [^1]: This may not be the best term. A register can have the semantic
