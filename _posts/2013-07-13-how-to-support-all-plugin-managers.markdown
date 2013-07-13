@@ -82,7 +82,7 @@ plugin managers require it.
 
 ### Follow canonical runtime directory structure
 
-<span style="background-color:orange;">Required by more or less all
+<span style="background-color:#ffcc00;">Required by more or less all
 plugin managers</span>
 
 This should be a given. Vim runtime files are organized in a number of
@@ -103,7 +103,7 @@ usr_41`][usr_41].
 
 ### Host the plugin in a GitHub.com repository
 
-&#8203;<span style="background-color:orange;">Required by
+&#8203;<span style="background-color:#ffcc00;">Required by
 <em>vim-flavor</em></span>  
 <span style="background-color:yellow;">Recommended for
 <em>pathogen.vim</em>, <em>Vundle</em>, <em>neobundle.vim</em>,
@@ -152,7 +152,7 @@ with the GetLatestVimScripts author.)
 
 ### Tag a release with version number tags
 
-<span style="background-color:orange;">Required by
+<span style="background-color:#ffcc00;">Required by
 <em>vim-flavor</em></span>
 
 Using Git tags to properly version a release is good practice in any
@@ -170,7 +170,7 @@ by vim-flavor.
 
 ### Upload an archive of the release to vim.org
 
-&#8203;<span style="background-color:orange;">Required by
+&#8203;<span style="background-color:#ffcc00;">Required by
 <em>GetLatestVimScripts</em></span>  
 <span style="background-color:yellow;">Recommended for <em>Vimana</em>,
 also recommended by <a
@@ -226,7 +226,7 @@ must support them all separately. It isn't hard to do though.
 
 ### Add additional "GetLatestVimScripts" lines for the dependencies
 
-<span style="background-color:orange;">Required by
+<span style="background-color:#ffcc00;">Required by
 <em>GetLatestVimScripts</em></span>
 
 This is straightforward. Adding additional "GetLatestVimScripts" lines
@@ -244,7 +244,7 @@ with GetLatestVimScripts:
 
 ### Add an addon-info.json file to the repository
 
-<span style="background-color:orange;">Required by
+<span style="background-color:#ffcc00;">Required by
 <em>vim-addon-manager</em></span>
 
 VAM takes a different approach. An `addon-info.json` file at the root of
@@ -266,7 +266,7 @@ and as they appear on the plugin's page.
 
 ### Add a Flavorfile to the repository
 
-<span style="background-color:orange;">Required by
+<span style="background-color:#ffcc00;">Required by
 <em>vim-flavor</em></span>
 
 Vim-flavor also uses a special file with dependency information at the
