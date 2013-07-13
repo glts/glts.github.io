@@ -74,10 +74,11 @@ installs, and to support this, three additional steps are necessary.
 That is all. Now that we have these checklists ready, let's go over them
 in detail.
 
+
 ## Stand-alone plugins
 
 We will go over each step, explaining why it is necessary and which
-plugin managers requires it.
+plugin managers require it.
 
 ### Follow canonical runtime directory structure
 
@@ -142,7 +143,7 @@ GetLatestVimScripts will see the line and register the plugin for
 automatic updating.
 
 But note: GetLatestVimScripts looks for such lines only inside
-`plugin/**/*.vim` files. No, it is not a clever plugin. If your plugin
+`plugin/**/*.vim` files. It is not a clever plugin. If your plugin
 consists of `autoload` scripts only, then your best bet is to create a
 `plugin/shebang.vim` file containing only the "GetLatestVimScripts"
 line. If this is your situation and you decide not to support
