@@ -181,7 +181,7 @@ Unbeknownst to many a GitHub hipster, the ["scripts" section on
 vim.org](http://www.vim.org/scripts/index.php) remains the official
 distribution channel and is in active use.
 
-The GetLatestVimScripts plugin which is included in the runtime files
+The GetLatestVimScripts plugin, which is included in the runtime files
 distributed with Vim downloads plugins from vim.org, as does Vimana
 (though it handles other sources as well). In order to support
 GetLatestVimScripts uploading an archive of the plugin to vim.org is
