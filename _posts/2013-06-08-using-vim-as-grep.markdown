@@ -102,21 +102,24 @@ operations on the contents of a variable, using a highly imaginative
 syntax. One of them is "pattern substitution". The pattern substitution
 parameter expansion in
 
-<code>${var/<span style="font-weight:normal;">teh</span>/<span
-style="font-weight:normal;">the</span>}</code>
+<code><span style="font-weight:bold;">${var/</span>teh<span
+style="font-weight:bold;">/</span>the<span
+style="font-weight:bold;">}</span></code>
 
 yields the contents of variable `var` with the first instance of `teh`
-replaced with `the`. Doubling the first slash <code>${var//<span
-style="font-weight:normal;">teh</span>/<span
-style="font-weight:normal;">the</span>}</code> makes the pattern
-substitution global, thus changing all occurrences of `teh` into `the`.
+replaced with `the`. Doubling the first slash <code><span
+style="font-weight:bold;">${var//</span>teh<span
+style="font-weight:bold;">/</span>the<span
+style="font-weight:bold;">}</span></code> makes the pattern substitution
+global, thus changing all occurrences of `teh` into `the`.
 
 In vgrep, the pattern substitution on `${1}` serves to escape all
 forward slashes in the Vim regexp, because they would otherwise
 terminate the `:g/re/p` command early. It is these lucky circumstances
 plus an escaped backslash that eventually create the satisfying pattern
-in <code>${1//<span style="font-weight:normal;">/</span>/<span
-style="font-weight:normal;">\\/</span>}</code>.
+in <code><span style="font-weight:bold;">${1//</span>/<span
+style="font-weight:bold;">/</span>\\/<span
+style="font-weight:bold;">}</span></code>.
 
 The second parameter, `"${@:2}"`, expands to the arguments passed to
 vgrep minus the first one, it's an array slicing expansion of sorts.
@@ -205,8 +208,8 @@ $ vgrep '^h' sounds | xxd
 {% endhighlight %}
 
 Vgrep `:print`s lines just like the shell's `echo` or *cat* do, with
-linefeed-terminated lines. Good. Now consider what happens with
-`:verbose echo`:
+linefeed-terminated lines. Now consider what happens with `:verbose
+echo`:
 
 {% highlight console %}
 $ vim -es <<<"verb echo 'ho'|verb echo 'hum'" | xxd
@@ -269,8 +272,14 @@ script'](https://github.com/kana/vim-vspec/blob/master/bin/vspec)
 vimscript'](http://vim.wikia.com/wiki/Vim_as_a_system_interpreter_for_vimscript)
 (Nov 2012)
 
+Finally I should mention [`:h :vimgrep`][vimgrep] which is superior to
+this little experiment in every way.
+
+[vimgrep]: http://vimdoc.sourceforge.net/htmldoc/quickfix.html#:vimgrep
+
 <br />
 
-*First published by glts on June 8, 2013. I appreciate any feedback.*
+*First published by glts on June 8, 2013, and amended on July 13, 2013.
+I appreciate any feedback.*
 
 ---
