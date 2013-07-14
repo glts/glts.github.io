@@ -58,8 +58,6 @@ If you follow these guidelines then you will be able to sleep soundly in
 the knowledge that your plugin will be installable without fuss on all
 plugin managers in popular use.
 
-{% comment %} TODO {% endcomment %}
-
 ### Plugins with dependencies
 
 A plugin might depend on another plugin to function properly. In that
@@ -199,8 +197,6 @@ must be contained directly (at the top level) inside the zip. There must
 files. For example, this would be a good upload for the fictional
 *shebang.vim* plugin, uploaded to vim.org as `shebang-1.0.0.zip`:
 
-*[VCS]: version control system
-
     autoload/
         shebang/
             shebang.vim
@@ -310,5 +306,8 @@ itself, so that auto-installation isn't possible in this case.)
 <br />
 
 *First published by glts on July 13, 2013. Your feedback is welcome.*
+
+*[VCS]: version control system
+*[VAM]: vim-addon-manager
 
 ---
