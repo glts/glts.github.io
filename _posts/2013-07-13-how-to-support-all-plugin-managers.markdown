@@ -180,7 +180,7 @@ vim.org](http://www.vim.org/scripts/index.php) remains the official
 distribution channel and is in active use.
 
 The GetLatestVimScripts plugin, which is included in the runtime files
-distributed with Vim downloads plugins from vim.org, as does Vimana
+distributed with Vim, downloads plugins from vim.org, as does Vimana
 (though it handles other sources as well). In order to support
 GetLatestVimScripts uploading an archive of the plugin to vim.org is
 required.
@@ -188,7 +188,7 @@ required.
 I recommend packaging the plugin as a zip archive for best
 compatibility. The official recommendation is to make a
 [Vimball](http://www.vim.org/scripts/script.php?script_id=1502), but
-this format has never seen universal acceptance, and personally I try to
+this format has never been widely accepted, and personally I try to
 avoid them as best I can.
 
 **Very important:** the archive must be flat. All runtime directories
@@ -228,12 +228,12 @@ must support them all separately. It isn't hard to do though.
 This is straightforward. Adding additional "GetLatestVimScripts" lines
 of the same format makes GetLatestVimScripts retrieve the dependencies,
 too. My experience has been better when I placed the dependency lines
-above the line for the plugin itself.
+*above* the line for the plugin itself.
 
 Assuming the *shebang.vim* plugin depends on the *basebang.vim* plugin
 (which also Supports All Plugin Managers), the following declaration
-inside `plugin/shebang.vim` would enable fully automatic installation
-with GetLatestVimScripts:
+inside `plugin/shebang.vim` would enable automatic installation with
+GetLatestVimScripts:
 
     " GetLatestVimScripts: 3456 1 :AutoInstall: basebang.vim
     " GetLatestVimScripts: 6789 1 :AutoInstall: shebang.vim
