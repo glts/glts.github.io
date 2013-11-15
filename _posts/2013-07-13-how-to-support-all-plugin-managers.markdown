@@ -63,10 +63,11 @@ plugin managers in popular use.
 A plugin might depend on another plugin to function properly. In that
 situation, the obvious minimum is to declare any dependencies in the
 Readme file or the docs. Some plugin managers can automate dependency
-installs, and to support this, three additional steps are necessary.
+installs, and to support this, four additional steps are necessary.
 
 *   Add additional "GetLatestVimScripts" lines for the dependencies
 *   Add an `addon-info.json` file to the repository
+*   Add `:NeoBundleDepends` statements in your plugin script
 *   Add a "Flavorfile" to the repository
 
 That is all. Now that we have these checklists ready, let's go over them
@@ -214,8 +215,8 @@ that goes: "Unzip in `~/.vim`".
 ## Plugins with dependencies
 
 A few plugin managers have the ability to retrieve and install
-dependencies automatically: VAM, GetLatestVimScripts, and vim-flavor can
-do this given proper support by the plugin.
+dependencies automatically: VAM, neobundle.vim, GetLatestVimScripts, and
+vim-flavor can do this given proper support by the plugin.
 
 Unfortunately, every plugin manager has its own way of doing it so we
 must support them all separately. It isn't hard to do though.
@@ -260,20 +261,40 @@ use the right names, both for the plugin name as well as for the
 dependencies. The correct names are as they were registered on vim.org
 and as they appear on the plugin's page.
 
+### Add `:NeoBundleDepends` statements in your plugin script
+
+<span style="background-color:#ffcc00;">Required by
+<em>neobundle.vim</em></span>
+
+Neobundle.vim is pretty feature-rich, and as such it has not one but two
+different ways of declaring plugin dependencies. The simpler one uses
+`:NeoBundleDepends`. This is a command that you can put in your plugin
+script. Surrounded with a little boilerplate it looks like this:
+
+    if exists(':NeoBundleDepends') == 2
+      NeoBundleDepends 'glts/vim-basebang'
+    endif
+
+Put this anywhere in `plugin/shebang.vim` and neobundle will
+automatically pull in the *basebang.vim* dependency from its GitHub
+repository.
+
+(For the second way look up `:h neobundle-recipe`.)
+
 ### Add a Flavorfile to the repository
 
 <span style="background-color:#ffcc00;">Required by
 <em>vim-flavor</em></span>
 
-Vim-flavor also uses a special file with dependency information at the
-root of the repository. This is called a "Flavorfile"; the file name
+Like VAM, vim-flavor uses a special file with dependency information at
+the root of the repository. This is called a "Flavorfile"; the file name
 must be `VimFlavor`. The format is more Ruby-like and rather simple.
 Here is the complete Flavorfile for *shebang.vim*:
 
     flavor 'glts/vim-basebang', '~> 1.6'
 
 This declares a dependency on the `1.6` version tag of the
-`glts/vim-basebang` GitHub repository.
+`glts/vim-basebang` repository.
 
 This also clears up why vim-flavor is so strict in its requirements for
 a GitHub repo and version tags: It's so that any plugin can be declared
@@ -305,7 +326,8 @@ itself, so that auto-installation isn't possible in this case.)
 
 <br />
 
-*First published by glts on July 13, 2013. Your feedback is welcome.*
+*First published by glts on July 13, 2013, updated on November 15, 2013.
+Your feedback is welcome.*
 
 *[VCS]: version control system
 *[VAM]: vim-addon-manager
