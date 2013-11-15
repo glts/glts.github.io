@@ -279,6 +279,17 @@ This also clears up why vim-flavor is so strict in its requirements for
 a GitHub repo and version tags: It's so that any plugin can be declared
 a dependency in Flavorfiles.
 
+### Execute "NeoBundleDepends" for each dependency
+
+<span style="background-color:#ffcc00;">Required by
+<em>NeoBundle</em>
+
+NeoBundle simply requires that dependencies are registered through calls of
+`NeoBundleDepends`. A check for NeoBundle's existence should also be in place.
+
+    if exists(':NeoBundleDepends')
+        NeoBundleDepends 'glts/vim-basebang'
+    endif
 
 ## Summary
 
