@@ -5,6 +5,11 @@ tags: [vim, plugins]
 ---
 # How to support all plugin managers
 
+**Update 2015-03-25: I no longer think it is wise to try to 'support all
+plugin managers'. Fragmentation of the Vim plugin ecosystem continues
+unabatedly. Adding an `addon-info.json` seems sensible, supporting the
+thing that is GetLatestVimScripts doesn't.**
+
 One of our interests as responsible Vim plugin authors is to let our
 users have the freedom to choose, where it makes sense to do so. We
 might design our plugin so that it is platform-independent, or we might
